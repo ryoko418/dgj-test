@@ -15,7 +15,7 @@ resource "oci_core_instance" "ubuntu_instance" {
         subnet_id = "ocid1.subnet.oc1.ap-tokyo-1.aaaaaaaao6mqfpr4itrw4ap7lix7siil4wx7ribjqp4tfm3kmarskz2np44a"
     }
     metadata = {
-        ssh_authorized_keys = file("~/.ssh/dg-test.pub")
+        ssh_authorized_keys = file("../ssh/dg-test.pub")
     } 
     preserve_boot_volume = false
 }
