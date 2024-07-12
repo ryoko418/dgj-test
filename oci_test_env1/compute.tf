@@ -20,7 +20,7 @@ resource oci_core_instance export_BASTION1 {
     ssh_authorized_keys = "${file(var.public_compute_ssh_key)}"
   }
 }
-
+/*
 resource oci_core_instance export_PRVCOMP1 {
   compartment_id      = "${var.compartment_ocid}"
   display_name        = "${upper(var.oci_resource_prefix)}-PRVCOMP1"
@@ -41,4 +41,5 @@ resource oci_core_instance export_PRVCOMP1 {
     ssh_authorized_keys = "${file(var.private_compute_ssh_key)}"
   }
 }
+*/
 
